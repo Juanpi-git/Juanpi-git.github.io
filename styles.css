@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*TODO EL DOCUMENTO*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open sans";
+}
+
+/* HEADER */
+.header {
+  background-color: #dbdbdb;
+}
+
+.upper-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.upper-section .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.upper-section .menu {
+  width: 36px;
+  height: 32px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 7px;
+}
+
+.menu .black-rectangle {
+  background-color: black;
+  color: #dbdbdb;
+  font-size: 0;
+  width: 100%;
+  height: 6px;
+}
+
+.header .picture {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 96px 318px;
+  row-gap: 58px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.header .image {
+  width: 220px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .upper-section {
+    justify-content: space-around;
+    padding-top: 36px;
+  }
+
+  .upper-section .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .upper-section .menu {
+    width: 550px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    gap: 50px;
+  }
+
+  .menu .black-rectangle {
+    background-color: #dbdbdb;
+    color: black;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .header .picture {
+    margin-top: 100px;
+    grid-template-columns: 313px 435px;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .header .title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: start;
+    margin: 0 20px;
+  }
+
+  .header .image {
+    width: 350px;
+    height: 475px;
+    margin: 0 auto;
+  }
+}
+
+/*SECCIÓN 1*/
+.section-1 {
+  display: grid;
+  grid-template-rows: 277px 160px;
+  row-gap: 100px;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.section-1 .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 55px;
+  margin-bottom: 41px;
+}
+
+.section-1 .description {
+  text-align: center;
+  width: 312px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.section-1 .logo {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+@media (min-width: 1440px) {
+  .section-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .section-1 .logo {
+    width: 211px;
+    height: 211px;
+    margin-top: 145px;
+    margin-bottom: 180px;
+    margin-left: 300px;
+    margin-right: 90px;
+  }
+
+  .section-1 .container {
+    margin-right: 300px;
+    margin-left: 0;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+
+  .section-1 .title {
+    text-align: start;
+    margin-bottom: 28px;
+  }
+
+  .section-1 .description {
+    text-align: start;
+    width: 530px;
+  }
+}
+
+/*SECCIÓN 2*/
+.section-2 .title {
+  margin-top: 70px;
+  margin-bottom: 43px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.services {
+  display: grid;
+  grid-template-rows: 312px 312px 312px;
+  row-gap: 100px;
+  margin: 0 auto;
+  margin-bottom: 66px;
+  width: 290px;
+  text-align: center;
+}
+
+.service-image {
+  width: 138px;
+  height: 138px;
+}
+
+.service-paragraph {
+  width: 100%;
+  height: 117px;
+}
+
+.service-name,
+.service-paragraph {
+  font-family: "Roboto";
+}
+
+.service-name {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+@media (min-width: 1440px) {
+  .section-2 .title {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+  }
+
+  .service {
+    width: 271px;
+  }
+}
+
+/*SECCIÓN 3*/
+.section-3 {
+  background-color: black;
+  color: white;
+}
+
+.section-3 .title {
+  font-weight: 700;
+  font-size: 32px;
+  padding-top: 70px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.form-container {
+  width: 335px;
+  display: grid;
+  row-gap: 25px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.form-container .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-container .input .label {
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.form-container #name,
+#mail {
+  height: 45px;
+}
+
+.form-container #message {
+  min-height: 113px;
+}
+
+.form-container .btn {
+  width: 100%;
+  height: 45px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #ffd953;
+  margin-top: 35px;
+}
+
+@media (min-width: 1440px) {
+  .section-3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 116px 0;
+  }
+
+  .section-3 .title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-left: 300px;
+    padding-top: 0;
+  }
+
+  .form-container {
+    width: 376px;
+    margin-right: 400px;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #dbdbdb;
+}
+
+.footer .logo {
+  width: 77px;
+  height: 77px;
+  border-radius: 5px;
+  margin-top: 53px;
+  margin-left: 16px;
+}
+
+.footer .lowest-section {
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-bottom: 110px;
+  display: grid;
+  row-gap: 28px;
+}
+
+.footer .lowest-section .social-media-logo {
+  width: 27px;
+  height: 27px;
+}
+
+.footer .lowest-section a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 500px;
+  }
+
+  .footer .logo {
+    width: 110px;
+    height: 110px;
+    margin: 0;
+  }
+}
