@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.seccion-1 {
+  height: 627px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #13171c;
+}
+
+@media (min-width: 1275px) {
+  .seccion-1 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.seccion-1 .titulo-trabajo {
+  width: 288px;
+  height: 150px;
+  margin-top: 70px;
+  margin-bottom: 33px;
+}
+
+@media (min-width: 1275px) {
+  .titulo-trabajo {
+    width: 586px;
+    height: 192px;
+    display: grid;
+  }
+}
+
+.titulo-trabajo p {
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+}
+
+@media (min-width: 1275px) {
+  .titulo-trabajo p {
+    font-size: 96px;
+    text-align: start;
+  }
+}
+
+.mis {
+  color: white;
+}
+
+.trabajos {
+  color: #00adb5;
+}
+
+.imagen-trabajo {
+  margin-top: 40px;
+  width: 219px;
+  height: 211px;
+}
+
+@media (min-width: 1275px) {
+  .imagen-trabajo {
+    width: 353px;
+    height: 340px;
+  }
+}
+
+.seccion-trabajos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 741px;
+  height: 1750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../images/doodle-items.jpg");
+}
+
+@media (min-width: 1275px) {
+  .seccion-trabajos {
+    height: 762px;
+  }
+}
+
+.contenedor-trabajos {
+  display: grid;
+  grid-template-columns: 324px;
+  grid-template-rows: repeat(3, 481px);
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 77px;
+}
+
+@media (min-width: 1275px) {
+  .contenedor-trabajos {
+    grid-template-rows: 500px;
+    grid-template-columns: repeat(3, 360px);
+    gap: 44px;
+    margin-top: 104px;
+  }
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2491px;
+}
+
+@media (min-width: 1275px) {
+  .footer {
+    top: 1503px;
+  }
+}
+
+/* TENGO QUE ACOMODAR EL CONTENIDO DE ESTAS CARDS QUE SE VEN MAL */

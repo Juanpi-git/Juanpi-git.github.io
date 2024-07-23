@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: screen;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 114px;
+  padding: 37px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #13171c;
+}
+
+@media (min-width: 1275px) {
+  .header {
+    height: 121px;
+  }
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.logo:hover {
+  width: 70px;
+  height: 70px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  border: solid 3px white;
+  border-radius: 2px;
+  padding: 3px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  background-color: #13171c;
+}
+
+@media (min-width: 1275px) {
+  .burger {
+    width: 327px;
+    height: 47px;
+    margin-right: 20px;
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    border: none;
+  }
+}
+
+.burger .burger-item {
+  background-color: white;
+  color: transparent;
+  height: 3px;
+  width: 24px;
+}
+
+@media (min-width: 1275px) {
+  .burger {
+    display: none;
+  }
+}
+
+.link-container {
+  display: none;
+}
+
+.link-container a {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400px;
+  color: white;
+  text-decoration: none;
+  margin-right: 42px;
+}
+
+.link-container a:hover {
+  font-size: 20px;
+  color: #00adb5;
+}
+
+@media (min-width: 1275px) {
+  .link-container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 110px);
+  }
+}
+
+.burger-abierta {
+  height: 838px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: none;
+}
+
+.cerrar-burger {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 24px;
+  top: 37px;
+  background-color: black;
+  border: none;
+}
+
+.cruz {
+  width: 100%;
+  height: 75%;
+}
+
+.burger-abierta-item-contenedor {
+  width: 275px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-abierta-item-contenedor .burger-item {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 42px;
+  color: white;
+  margin-bottom: 50px;
+  text-decoration: none;
+}

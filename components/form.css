@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #13171c;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  color: white;
+  height: 989px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1275px) {
+  .contenedor {
+    height: 900px;
+    display: grid;
+    grid-template-columns: 500px 600px;
+    gap: 50px;
+  }
+}
+
+.titulo-form {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: "Poppins";
+  font-size: 42px;
+  font-weight: 700;
+}
+
+@media (min-width: 1275px) {
+  .titulo-form {
+    margin-bottom: 470px;
+  }
+}
+
+.form {
+  width: 313px;
+  height: 649px;
+  display: grid;
+  grid-template-columns: 313px;
+  grid-template-rows: 96px 96px 312px 55px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1275px) {
+  .form {
+    width: 600px;
+    height: 516px;
+    display: grid;
+    grid-template-columns: 288px 288px;
+    grid-template-rows: 96px 317px 55px;
+    gap: 24px;
+  }
+}
+
+.contenedor-nombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contenedor-nombre .nombre,
+.contenedor-email .email,
+.contenedor-mensaje .mensaje {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contenedor-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contenedor-mensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+@media (min-width: 1275px) {
+  .contenedor-mensaje {
+    grid-column: span 2;
+  }
+}
+
+input {
+  height: 59px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background-color: #393e4680;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+textarea {
+  min-height: 280px;
+  min-width: 100%;
+  border: none;
+  border-radius: 16px;
+  background-color: #393e4680;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn {
+  height: 100%;
+  border: none;
+  border-radius: 24px;
+  background-color: #00adb5;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media (min-width: 1275px) {
+  .btn:hover {
+    width: 290px;
+    height: 58px;
+  }
+}
+
+.btn:active {
+  height: 100%;
+  width: 100%;
+}
